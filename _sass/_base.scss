@@ -13,11 +13,11 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body, input {
+html, body, input {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 700;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -218,6 +218,7 @@ pre {
   width: 256px;
   width: 16rem;
   z-index: 20;
+  font-weight: 500;
 }
 
 .sidebar > h1{
