@@ -1,8 +1,7 @@
 # Site settings
 permalink: /scripts/:categories/:title
 title: Scriptlify
-description: > # this means to ignore newlines until "baseurl:"
-The unofficial "Softaculous" for Netlify.
+description: The unofficial "Softaculous" for Netlify.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://scriptlify.netlify.com" # the base hostname & protocol for your site
 
