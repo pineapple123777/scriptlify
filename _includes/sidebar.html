@@ -4,13 +4,13 @@
 <div class="sidebar-nav">
 <ul id="scripts">
 <li><h3>Blog</h3></li>
-    {% for post in site.Blog %}
+    {% for post in site.categories.Blog %}
       <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
     {% endfor %}
 <li><h3>Documentation</h3></li>
-    {% for post in site.Documentation %}
+    {% for post in site.categories.Documentation %}
       <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
