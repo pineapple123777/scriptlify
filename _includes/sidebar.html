@@ -4,13 +4,9 @@
 <div class="sidebar-nav">
 <ul id="scripts">
 <li><h3>Blog</h3></li>
-{% if site.categories == "blog" %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
+{{ site.categories.Blog }}
 <li><h3>Documentation</h3></li>
-{% if site.categories == "documentation" %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endif %}
+{{ site.categories.Documentation }}
 </ul>
 </div>
 </aside>
