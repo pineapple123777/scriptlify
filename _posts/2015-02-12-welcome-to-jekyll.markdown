@@ -1,7 +1,7 @@
 ---
 layout: script
 title:  "Welcome to Jekyll!"
-categories: blog
+categories: Blog
 description: Example description
 repository_url: https://github.com/TristianK3604/wikify
 cms: true
