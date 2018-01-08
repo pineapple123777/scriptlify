@@ -28,4 +28,4 @@ collections:
         options:
          - { label: "No", value: "false" }
          - { label: "Yes", value: "true" }
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}
