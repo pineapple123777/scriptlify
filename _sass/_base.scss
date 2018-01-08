@@ -297,3 +297,11 @@ body.sticky .sidebar, body.sticky {
     border-left: 0;
     border-right: 0;
 }
+
+.sidebar-link {
+    transition: all 0.3s;
+}
+
+.sidebar-link:hover {
+    padding-left: 15px;
+}
