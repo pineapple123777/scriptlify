@@ -14,8 +14,10 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "script"}
       - {label: "Script Name", name: "title", widget: "string"}
-      - {label: "Repository URL", name: "repository_url", widget: "string"}
+      - {label: "GitHub Username", name: "gh_username", widget: "string"}
+      - {label: "Repository Name", name: "repo_name", widget: "string"}
       - {label: "Screenshot", name: "screenshot", widget: "image"}
+      - {label: "Documentation URL", name: "doc_url", widget: "string"}
       - label: "Category"
         name: "categories"
         widget: "select"
