@@ -1,5 +1,9 @@
-
+---
+---
 var tipuesearch = {"pages": [
+     {% for post in site.posts %}
+     {"title": "{{ post.title }}", "text": "{{ post.description }}", "tags": "{{ post.categories }}", "url": "{{ post.url }}"},
+     {% endfor %}
      {"title": "Tipue", "text": "Tipue is a small web development studio based in North London.", "tags": "jQuery HTML5 CSS", "url": "http://www.tipue.com"},
      {"title": "Tipue Search, a site search engine jQuery plugin", "text": "Tipue Search is a site search engine jQuery plugin. It's free, open source, responsive and fast. Tipue Search only needs a browser that supports jQuery. It doesn't need MySQL or similar. In Static mode it doesn't even need a web server.", "tags": "JavaScript", "url": "http://www.tipue.com/search"},
      {"title": "Getting Started with Tipue Search", "text": "Tipue Search usually consists of two parts, the search box and the results page. The results page displays the search results.", "tags": "", "url": "http://www.tipue.com/search/docs/?d=1"},
