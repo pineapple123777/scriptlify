@@ -7,3 +7,4 @@ cms: 'true'
 description: A fast blog-aware static site generator.
 ---
 
+Some body text
