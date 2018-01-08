@@ -2,7 +2,7 @@
       <h1><a href="/" style="text-underline:none;color:black;">Scriptlify</a></h1>
 <div class="sidebar-nav">
 <input type="text" class="search" placeholder="Search" />
-<div class="scripts">
+<div id="scripts">
 <ul class="list">
 <li><h3>Blog</h3></li>
     {% for post in site.categories.Blog %}
@@ -25,5 +25,5 @@ var options = {
   valueNames: [ 'sidebar-link' ]
 };
 
-var userList = new List('scripts', options);
+var scriptList = new List('scripts', options);
 </script>
