@@ -11,6 +11,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
   if (window.netlifyIdentity) {
@@ -22,5 +23,8 @@
       }
     });
   }
+</script>
+<script>
+  $("a[href*='" + location.pathname + "']").addClass("current");
 </script>
 </head>
