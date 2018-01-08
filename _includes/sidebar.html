@@ -1,8 +1,9 @@
 <aside class="sidebar">
       <h1><a href="/" style="text-underline:none;color:black;">Scriptlify</a></h1>
 <div class="sidebar-nav">
-<input id="search" type="text" class="search" placeholder="Search" />
-<ul id="scripts">
+<input type="text" class="search" placeholder="Search" />
+<div class="scripts">
+<ul class="list">
 <li><h3>Blog</h3></li>
     {% for post in site.categories.Blog %}
       <li>
@@ -17,4 +18,12 @@
     {% endfor %}
 </ul>
 </div>
+</div>
 </aside>
+<script>
+var options = {
+  valueNames: [ 'sidebar-link' ]
+};
+
+var userList = new List('scripts', options);
+</script>
