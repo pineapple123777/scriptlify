@@ -16,8 +16,8 @@ collections:
       - {label: "Script Name", name: "title", widget: "string"}
       - {label: "GitHub Username", name: "gh_username", widget: "string"}
       - {label: "Repository Name", name: "repo_name", widget: "string"}
-      - {label: "Screenshot", name: "screenshot", widget: "image"}
-      - {label: "Documentation URL", name: "doc_url", widget: "string"}
+      - {label: "Screenshot", name: "screenshot", widget: "image", required: "false"}
+      - {label: "Documentation URL", name: "doc_url", widget: "string", required: "false"}
       - label: "Category"
         name: "categories"
         widget: "select"
