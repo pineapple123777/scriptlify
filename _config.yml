@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://scriptlify.netlify.com" # the base hostname & protocol for your site
 paginate: 5
 paginate_path: "/all-scripts/:num/"
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
