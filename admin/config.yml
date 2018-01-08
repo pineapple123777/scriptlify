@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  
+publish_mode: editorial_workflow
+media_folder: "images"
+
+collections:
+  - name: "scripts" # Used in routes, e.g., /admin/collections/blog
+    label: "Script Page" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "script"}
+      - {label: "Script Name", name: "title", widget: "string"}
+      - {label: "Repository URL", name: "repository_url", widget: "string"}
+      - label: "Does this repository use Netlify CMS?"
+        name: "cms"
+        widget: "select"
+        options:
+         - { label: "No", value: "false" }
+         - { label: "Yes", value: "true" }
+      - {label: "Description", name: "description", widget: "markdown"}
