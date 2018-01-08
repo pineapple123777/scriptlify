@@ -8,7 +8,7 @@ layout: default
   <br /><br /><h1 class="page-heading">Recent Scripts</h1>
 
   <ul class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     <li>
     <h2>
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
