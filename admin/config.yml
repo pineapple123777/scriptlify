@@ -15,6 +15,12 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "script"}
       - {label: "Script Name", name: "title", widget: "string"}
       - {label: "Repository URL", name: "repository_url", widget: "string"}
+      - label: "Category"
+        name: "categories"
+        widget: "select"
+        options:
+         - { label: "Blog", value: "Blog" }
+         - { label: "Documentation", value: "Documentation" }
       - label: "Does this repository use Netlify CMS?"
         name: "cms"
         widget: "select"
