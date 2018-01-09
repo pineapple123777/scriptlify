@@ -3,27 +3,10 @@ layout: default
 title: Search
 ---
 
-<ul id="search-results"></ul>
-
-<script>
-  window.store = {
-    {% for post in site.posts %}
-      "{{ post.url | slugify }}": {
-        "title": "{{ post.title | xml_escape }}",
-        "category": "{{ post.categories | xml_escape }}",
-        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
-      }
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  };
-</script>
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="/js/search.js"></script>
-<!--<div id="tipue_search_content"></div>
+<div id="tipue_search_content"></div>
 
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch();
 });
-</script>-->
+</script>
