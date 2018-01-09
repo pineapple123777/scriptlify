@@ -1,4 +1,5 @@
-
+---
+---
 /*
 Tipue Search 6.1
 Copyright (c) 2017 Tipue
@@ -6,6 +7,7 @@ Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+var tipuesearch_pages = [{% for post in site.posts %}"{{ post.url }}", {% endfor %}];
 
 /*
 Stop words
