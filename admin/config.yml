@@ -17,13 +17,14 @@ collections:
       - {label: "GitHub Username", name: "gh_username", widget: "string"}
       - {label: "Repository Name", name: "repo_name", widget: "string"}
       - {label: "Screenshot", name: "screenshot", widget: "image", required: false}
-      - {label: "Documentation URL", name: "doc_url", widget: "string", required: false}
+      - {label: "Documentation URL", name: "doc_url", widget: "string"}
       - label: "Category"
         name: "categories"
         widget: "select"
         options:
          - { label: "Blog", value: "Blog" }
          - { label: "Documentation", value: "Documentation" }
+         - { label: "Other", value: "Other" }
       - label: "Does this repository use Netlify CMS?"
         name: "cms"
         widget: "select"
