@@ -3,10 +3,25 @@ layout: default
 title: Search
 ---
 
-<div id="tipue_search_content"></div>
+<ul id="search-results"></ul>
+
+<script>
+  window.store = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "category": "{{ post.categories | xml_escape }}",
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "url": "{{ post.url | xml_escape }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+<!--<div id="tipue_search_content"></div>
 
 <script>
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch();
 });
-</script>
+</script>-->
