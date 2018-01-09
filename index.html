@@ -13,7 +13,7 @@ layout: default
     <h2>
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>{{ post.categories }}
-    <div style="color:gray;">{{ post.content | truncatewords:30 }}</div>
+    <div style="color:gray;">{{ post.content | truncatewords:25 }}</div>
     </li>
     {% endfor %}
   </ul>
